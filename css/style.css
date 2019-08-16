@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+
+body {
+
+    color: white !important;
+    font-family: 'Raleway';
+    overflow-x: hidden;
+    background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+    background-attachment: fixed;
+}

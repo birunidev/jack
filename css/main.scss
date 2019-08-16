@@ -1,0 +1,886 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 100%;
+
+
+}
+
+$color: #000;
+$font-color : white;
+
+// mixin
+$tablet: 792px;
+$desktop: 992px;
+
+@mixin tablet {
+    @media(min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+body {
+
+    color: white !important;
+    font-family: 'Raleway';
+    overflow-x: hidden;
+    background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+// Header Page
+
+.logo {
+    margin-left: 20px;
+    position: relative;
+
+
+
+    h3 {
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba($color, $alpha: 0.5);
+    }
+}
+
+.social-wrapper {
+    width: 60px;
+    text-align: center;
+    margin: 0 20px 0 auto;
+    z-index: 999;
+
+    @include tablet {
+        display: none;
+    }
+
+
+
+    ul {
+        list-style-type: none;
+
+
+
+        li {
+            font-size: 25px;
+
+            @include tablet {}
+
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .desktop {
+        display: flex;
+
+    }
+}
+
+
+
+.header-image {
+    background: url(../img/header.jpeg) no-repeat;
+    background-size: cover;
+
+    height: 25em;
+    margin-top: -210px;
+
+    @include tablet {
+        height: 45em;
+        background-position: -70px 10px;
+        margin-top: -120px;
+        width: 50%;
+    }
+
+    @include desktop {
+        width: 50%;
+        height: 40em;
+        background-size: cover;
+        background-position: center -40px;
+    }
+}
+
+
+
+.main {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    @include tablet {
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: -10px;
+
+        @include tablet {
+            font-size: 35px;
+        }
+
+        @include desktop {
+            font-size: 60px;
+        }
+
+    }
+
+    .hi {
+        font-size: 23px;
+
+        @include tablet {
+            font-size: 28px;
+        }
+
+        @include tablet {
+            font-size: 40px;
+        }
+    }
+
+
+    .btn {
+        margin-top: 5px;
+        background: white;
+        font-weight: 700;
+        font-family: 'Nunito';
+        border-radius: 20px;
+
+        @include tablet {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn:hover {
+        border: 1px solid white;
+        color: white;
+        background: none;
+    }
+
+    .social-media {
+        display: none;
+
+
+        @include tablet {
+            display: block;
+
+
+            ul {
+                list-style: none;
+                display: flex;
+                margin-left: -35px;
+
+
+
+            }
+
+            li {
+                font-size: 30px;
+                margin-right: 20px;
+
+                @include tablet {
+                    font-size: 35px;
+                }
+
+                @include desktop {
+                    font-size: 40px;
+                }
+
+                a {
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+}
+
+.navbar-bottom {
+    background: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+
+    @include tablet {
+        height: 65px;
+
+    }
+
+
+
+    ul {
+        margin-top: 7px;
+        margin-left: -40px;
+
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-bottom: 10px;
+
+
+        li {
+            margin-right: 5px;
+            font-family: 'Nunito';
+
+
+
+            a {
+                color: rgba($color: #0070e2, $alpha: 0.5);
+                font-size: 15px;
+                transition: 0.5s;
+
+                @include tablet {
+                    font-size: 20px;
+                }
+            }
+
+            a:hover {
+                color: rgba($color: #0070e2, $alpha: 1);
+                text-decoration: none;
+                font-size: 17px;
+
+                @include tablet {
+                    font-size: 22px;
+                }
+
+            }
+
+            .on {
+                color: rgba($color: #0070e2, $alpha: 1);
+                font-size: 17px;
+
+                @include tablet {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+// Header Page
+
+
+// About Page
+
+.about-image {
+    background: url(../img/about.png) no-repeat;
+    background-size: cover;
+    width: 364px;
+    height: 380px;
+    margin-top: -210px;
+    z-index: -1;
+
+    @include tablet {
+        width: 100%;
+        height: 45em;
+        grid-column: 2;
+    }
+}
+
+#about .logo {
+
+    @include tablet {
+        margin-top: 20px;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: -40px;
+
+        li {
+            display: inline-block;
+            color: rgba($color: $font-color, $alpha: 0.5);
+
+            a {
+                color: rgba($color: $font-color, $alpha: 1);
+
+            }
+
+        }
+    }
+
+}
+
+.social-wrapper-about {
+    width: 60px;
+    text-align: center;
+    margin: -40px 20px 0 auto;
+
+    @include tablet {
+        width: 30%;
+        margin: -50px 20px 0 auto;
+    }
+
+    @include desktop {
+        margin: -50px -10px 0 auto;
+    }
+
+    ul {
+        list-style-type: none;
+
+        @include tablet {
+            display: flex;
+        }
+
+        li {
+            font-size: 25px;
+
+            @include tablet {
+                margin-right: 15px;
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+#about .desktop {
+
+    @include tablet {
+        margin-top: 43px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+}
+
+
+#about .main {
+    @include tablet {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .content {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    h1 {
+        margin-top: 10px;
+
+        @include tablet {
+            margin-top: -100px;
+            font-size: 40px;
+        }
+    }
+
+    p {
+        padding: 5px;
+
+        @include tablet {
+            font-size: 17px;
+        }
+    }
+}
+
+.social-reach {
+    ul {
+        list-style: none;
+        margin-left: -10px;
+
+        @include tablet {
+            margin-left: -30px;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 25px;
+            margin-right: 20px;
+
+            @include tablet {
+                display: block;
+            }
+
+            a {
+                color: white;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.finished-project {
+    margin: 0;
+
+    @include tablet {
+        text-align: right;
+
+    }
+
+    .number {
+        font-size: 20px;
+
+        font-weight: 500;
+        margin-bottom: -5px;
+
+        @include tablet {
+            font-size: 30px;
+        }
+    }
+}
+
+// About Page
+
+// Skill Page
+#skill,
+#portfolio,
+#contact,
+#detail {
+    .container {
+        background: white;
+        height: 650px;
+
+        .logo {
+            ul {
+                list-style: none;
+                margin-left: -40px;
+
+                li {
+                    display: inline-block;
+
+                }
+
+            }
+        }
+    }
+
+    .wrapper-port {
+        height: auto;
+    }
+
+    .logo {
+        color: #1780E6;
+        margin-left: 0;
+
+        h3 {
+            text-shadow: none !important;
+        }
+
+        ul {
+            li {
+                color: rgba(0, 0, 0, 0.5);
+
+                a {
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+
+    .social-wrapper-skill {
+        width: 60px;
+        text-align: center;
+
+        margin-right: 10px;
+        margin-top: -40px;
+        margin-left: auto;
+
+
+        @include tablet {
+            width: 20%;
+            margin-right: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            @include tablet {
+                display: flex;
+
+            }
+
+
+            li {
+                font-size: 25px;
+
+                @include tablet {
+                    margin-right: 10px;
+                }
+
+                a {
+                    color: #4A4A4A;
+                }
+            }
+        }
+    }
+
+    .skill,
+    .portfolio,
+    .contact {
+        color: #1780E6;
+        margin-top: 0px;
+
+        // Skills
+        .list-skills {
+            margin-top: 50px;
+
+            p {
+                color: #4A4A4A;
+
+            }
+
+            .bars {
+                width: 90%;
+                border: 1px solid #0070e2;
+                border-radius: 3px;
+                margin-bottom: 20px;
+            }
+
+            .skills {
+                text-align: right;
+                /* Right-align text */
+                padding-top: 10px;
+                /* Add top padding */
+                padding-bottom: 10px;
+                /* Add bottom padding */
+                color: white;
+                /* White text color */
+            }
+
+            .premiere {
+                width: 85%;
+                background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+            }
+
+            .cinema {
+                width: 80%;
+                background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+            }
+
+            .script {
+                width: 90%;
+                background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+            }
+
+            .com {
+                width: 75%;
+                background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+            }
+
+
+
+
+
+
+        }
+
+        // Skills
+        // Portfolio
+        .gallery {
+            margin-top: 40px;
+            margin-bottom: 10px;
+
+            @include tablet {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            @include desktop {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .span-row-2 {
+                @include desktop {
+                    grid-row: span 2 / auto;
+
+
+
+                }
+
+
+            }
+
+
+            .portfolio-wrapper {
+                width: 280px;
+                height: 300px;
+                margin: 0 auto 10px;
+
+                @include tablet {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                // overflow: hidden;
+                // margin-bottom: 10px;
+                .hover-content {
+                    padding-top: 100px;
+                    display: block;
+                    text-align: center;
+                    opacity: 0;
+                    transition: 0.5s;
+
+                    img {
+                        margin: 0 auto;
+                        cursor: pointer;
+                    }
+                }
+
+                .portfolio-content {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    transition: 0.5s;
+
+                    // background-position: center;
+                }
+
+                #foto1 {
+                    background: url(../img/paris.jpg)no-repeat;
+                    opacity: 1;
+
+                    @include desktop {
+                        height: 600px;
+                    }
+
+                    .hover-content {
+                        @include desktop {
+                            padding-top: 250px !important;
+                        }
+
+                    }
+                }
+
+                #foto1:hover,
+                #foto2:hover,
+                #foto3:hover,
+                #foto4:hover {
+                    opacity: 0.9;
+
+                }
+
+
+                #foto2 {
+                    background: url(../img/cow.jpg) no-repeat;
+                    background-size: cover;
+
+
+                }
+
+
+                #foto3 {
+                    background: url(../img/book.jpg) no-repeat;
+                    background-size: cover;
+
+                    @include desktop {
+                        height: 600px;
+                        background: url(../img/backpacker-window.jpg) no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .hover-content {
+                        @include desktop {
+                            padding-top: 250px !important;
+                        }
+
+                    }
+
+
+                }
+
+                #foto4 {
+                    background: url(../img/backpacker.jpg) no-repeat;
+                    background-size: cover;
+
+                    @include desktop {
+                        background: url(../img/book.jpg) no-repeat;
+
+                    }
+
+                }
+
+                .btn {
+                    // transform: translateY(5px);
+                    margin-top: 10px;
+                    background: #1A97F3;
+                    border-radius: 20px;
+                    color: white;
+                    font-size: 14px;
+                }
+
+                .play {
+                    cursor: pointer;
+                }
+
+                .btn:hover {
+                    background: white;
+                    color: #1A97F3;
+                }
+
+
+
+
+            }
+        }
+
+
+
+    }
+}
+
+#contact {
+    .contact {
+        form {
+            .btn {
+                background: #0070e2;
+                color: white;
+                border-radius: 20px;
+                width: 80px;
+            }
+
+            .btn:hover {
+                color: #0070e2;
+                background: white;
+                border: 1px solid #0070e2;
+            }
+        }
+    }
+}
+
+
+
+// Skill Page
+
+// Detail Page
+#detail {
+
+    height: 100%;
+
+    .container {
+        background: white !important;
+
+        .detail {
+            h1 {
+                color: #0070e2;
+                font-size: 33px;
+            }
+
+            .portfolio-detail {
+                color: #0070e2;
+
+                .grid-detail {
+
+                    @include tablet {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+                .portfolio-text {
+
+                    color: #4A4A4A;
+
+                    @include tablet {
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+
+                    .title {
+                        font-size: 25px;
+
+                        @include tablet {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+
+
+
+            .detail-wrapper {
+
+                width: 280px;
+                height: 300px;
+                overflow: hidden;
+
+                @include tablet {
+                    grid-column: 2;
+                    width: 100%;
+                    height: 25em;
+                }
+
+
+
+
+
+                .portfolio-content {
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+
+
+                    .hover-content {
+                        padding-top: 100px;
+                        display: block;
+                        text-align: center;
+                        opacity: 0;
+                        transition: 0.5s;
+
+                        img {
+                            margin: 0 auto;
+                            cursor: pointer;
+                        }
+
+                        @include tablet {
+                            padding-top: 150px;
+                        }
+
+                        @include desktop {
+                            paddding-top: 200px;
+                        }
+                    }
+
+                }
+            }
+
+            #port-image {
+                background: url(../img/paris.jpg) no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                @include tablet {
+                    background-position: center;
+                }
+
+                @include desktop {
+                    background-position: center -350px;
+                }
+            }
+        }
+    }
+}
+
+
+// Detail Page

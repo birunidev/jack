@@ -1,0 +1,1273 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  color: white !important;
+  font-family: 'Raleway';
+  overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0c2eb5), color-stop(#0051ce), color-stop(#0070e2), color-stop(#008ff2), to(#1dacff));
+  background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.logo {
+  margin-left: 20px;
+  position: relative;
+}
+
+.logo h3 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.social-wrapper {
+  width: 60px;
+  text-align: center;
+  margin: 0 20px 0 auto;
+  z-index: 999;
+}
+
+@media (min-width: 792px) {
+  .social-wrapper {
+    display: none;
+  }
+}
+
+.social-wrapper ul {
+  list-style-type: none;
+}
+
+.social-wrapper ul li {
+  font-size: 25px;
+}
+
+.social-wrapper ul li a {
+  color: white;
+}
+
+@media (min-width: 792px) {
+  .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-image {
+  background: url(../img/header.jpeg) no-repeat;
+  background-size: cover;
+  height: 25em;
+  margin-top: -210px;
+}
+
+@media (min-width: 792px) {
+  .header-image {
+    height: 45em;
+    background-position: -70px 10px;
+    margin-top: -120px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-image {
+    width: 50%;
+    height: 40em;
+    background-size: cover;
+    background-position: center -40px;
+  }
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+@media (min-width: 792px) {
+  .main {
+    margin-top: 100px;
+    text-align: left;
+  }
+}
+
+.main h1 {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+@media (min-width: 792px) {
+  .main h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main h1 {
+    font-size: 60px;
+  }
+}
+
+.main .hi {
+  font-size: 23px;
+}
+
+@media (min-width: 792px) {
+  .main .hi {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 792px) {
+  .main .hi {
+    font-size: 40px;
+  }
+}
+
+.main .btn {
+  margin-top: 5px;
+  background: white;
+  font-weight: 700;
+  font-family: 'Nunito';
+  border-radius: 20px;
+}
+
+@media (min-width: 792px) {
+  .main .btn {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+}
+
+.main .btn:hover {
+  border: 1px solid white;
+  color: white;
+  background: none;
+}
+
+.main .social-media {
+  display: none;
+}
+
+@media (min-width: 792px) {
+  .main .social-media {
+    display: block;
+  }
+  .main .social-media ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -35px;
+  }
+  .main .social-media li {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 792px) and (min-width: 792px) {
+  .main .social-media li {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 792px) and (min-width: 992px) {
+  .main .social-media li {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 792px) {
+  .main .social-media li a {
+    color: white;
+  }
+}
+
+.navbar-bottom {
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+@media (min-width: 792px) {
+  .navbar-bottom {
+    height: 65px;
+  }
+}
+
+.navbar-bottom ul {
+  margin-top: 7px;
+  margin-left: -40px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.navbar-bottom ul li {
+  margin-right: 5px;
+  font-family: 'Nunito';
+}
+
+.navbar-bottom ul li a {
+  color: rgba(0, 112, 226, 0.5);
+  font-size: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 792px) {
+  .navbar-bottom ul li a {
+    font-size: 20px;
+  }
+}
+
+.navbar-bottom ul li a:hover {
+  color: #0070e2;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+@media (min-width: 792px) {
+  .navbar-bottom ul li a:hover {
+    font-size: 22px;
+  }
+}
+
+.navbar-bottom ul li .on {
+  color: #0070e2;
+  font-size: 17px;
+}
+
+@media (min-width: 792px) {
+  .navbar-bottom ul li .on {
+    font-size: 22px;
+  }
+}
+
+.about-image {
+  background: url(../img/about.png) no-repeat;
+  background-size: cover;
+  width: 364px;
+  height: 380px;
+  margin-top: -210px;
+  z-index: -1;
+}
+
+@media (min-width: 792px) {
+  .about-image {
+    width: 100%;
+    height: 45em;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 792px) {
+  #about .logo {
+    margin-top: 20px;
+  }
+}
+
+#about .logo ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+#about .logo ul li {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#about .logo ul li a {
+  color: white;
+}
+
+.social-wrapper-about {
+  width: 60px;
+  text-align: center;
+  margin: -40px 20px 0 auto;
+}
+
+@media (min-width: 792px) {
+  .social-wrapper-about {
+    width: 30%;
+    margin: -50px 20px 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .social-wrapper-about {
+    margin: -50px -10px 0 auto;
+  }
+}
+
+.social-wrapper-about ul {
+  list-style-type: none;
+}
+
+@media (min-width: 792px) {
+  .social-wrapper-about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.social-wrapper-about ul li {
+  font-size: 25px;
+}
+
+@media (min-width: 792px) {
+  .social-wrapper-about ul li {
+    margin-right: 15px;
+  }
+}
+
+.social-wrapper-about ul li a {
+  color: white;
+}
+
+@media (min-width: 792px) {
+  #about .desktop {
+    margin-top: 43px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 792px) {
+  #about .main {
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 792px) {
+  #about .main .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#about .main h1 {
+  margin-top: 10px;
+}
+
+@media (min-width: 792px) {
+  #about .main h1 {
+    margin-top: -100px;
+    font-size: 40px;
+  }
+}
+
+#about .main p {
+  padding: 5px;
+}
+
+@media (min-width: 792px) {
+  #about .main p {
+    font-size: 17px;
+  }
+}
+
+.social-reach ul {
+  list-style: none;
+  margin-left: -10px;
+}
+
+@media (min-width: 792px) {
+  .social-reach ul {
+    margin-left: -30px;
+  }
+}
+
+.social-reach ul li {
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+@media (min-width: 792px) {
+  .social-reach ul li {
+    display: block;
+  }
+}
+
+.social-reach ul li a {
+  color: white;
+}
+
+.social-reach ul li a:hover {
+  text-decoration: none;
+}
+
+.finished-project {
+  margin: 0;
+}
+
+@media (min-width: 792px) {
+  .finished-project {
+    text-align: right;
+  }
+}
+
+.finished-project .number {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+@media (min-width: 792px) {
+  .finished-project .number {
+    font-size: 30px;
+  }
+}
+
+#skill .container,
+#portfolio .container,
+#contact .container,
+#detail .container {
+  background: white;
+  height: 650px;
+}
+
+#skill .container .logo ul,
+#portfolio .container .logo ul,
+#contact .container .logo ul,
+#detail .container .logo ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+#skill .container .logo ul li,
+#portfolio .container .logo ul li,
+#contact .container .logo ul li,
+#detail .container .logo ul li {
+  display: inline-block;
+}
+
+#skill .wrapper-port,
+#portfolio .wrapper-port,
+#contact .wrapper-port,
+#detail .wrapper-port {
+  height: auto;
+}
+
+#skill .logo,
+#portfolio .logo,
+#contact .logo,
+#detail .logo {
+  color: #1780E6;
+  margin-left: 0;
+}
+
+#skill .logo h3,
+#portfolio .logo h3,
+#contact .logo h3,
+#detail .logo h3 {
+  text-shadow: none !important;
+}
+
+#skill .logo ul li,
+#portfolio .logo ul li,
+#contact .logo ul li,
+#detail .logo ul li {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#skill .logo ul li a,
+#portfolio .logo ul li a,
+#contact .logo ul li a,
+#detail .logo ul li a {
+  color: black;
+}
+
+#skill .social-wrapper-skill,
+#portfolio .social-wrapper-skill,
+#contact .social-wrapper-skill,
+#detail .social-wrapper-skill {
+  width: 60px;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: -40px;
+  margin-left: auto;
+}
+
+@media (min-width: 792px) {
+  #skill .social-wrapper-skill,
+  #portfolio .social-wrapper-skill,
+  #contact .social-wrapper-skill,
+  #detail .social-wrapper-skill {
+    width: 20%;
+    margin-right: 30px;
+  }
+}
+
+#skill .social-wrapper-skill ul,
+#portfolio .social-wrapper-skill ul,
+#contact .social-wrapper-skill ul,
+#detail .social-wrapper-skill ul {
+  list-style-type: none;
+}
+
+@media (min-width: 792px) {
+  #skill .social-wrapper-skill ul,
+  #portfolio .social-wrapper-skill ul,
+  #contact .social-wrapper-skill ul,
+  #detail .social-wrapper-skill ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#skill .social-wrapper-skill ul li,
+#portfolio .social-wrapper-skill ul li,
+#contact .social-wrapper-skill ul li,
+#detail .social-wrapper-skill ul li {
+  font-size: 25px;
+}
+
+@media (min-width: 792px) {
+  #skill .social-wrapper-skill ul li,
+  #portfolio .social-wrapper-skill ul li,
+  #contact .social-wrapper-skill ul li,
+  #detail .social-wrapper-skill ul li {
+    margin-right: 10px;
+  }
+}
+
+#skill .social-wrapper-skill ul li a,
+#portfolio .social-wrapper-skill ul li a,
+#contact .social-wrapper-skill ul li a,
+#detail .social-wrapper-skill ul li a {
+  color: #4A4A4A;
+}
+
+#skill .skill,
+#skill .portfolio,
+#skill .contact,
+#portfolio .skill,
+#portfolio .portfolio,
+#portfolio .contact,
+#contact .skill,
+#contact .portfolio,
+#contact .contact,
+#detail .skill,
+#detail .portfolio,
+#detail .contact {
+  color: #1780E6;
+  margin-top: 0px;
+}
+
+#skill .skill .list-skills,
+#skill .portfolio .list-skills,
+#skill .contact .list-skills,
+#portfolio .skill .list-skills,
+#portfolio .portfolio .list-skills,
+#portfolio .contact .list-skills,
+#contact .skill .list-skills,
+#contact .portfolio .list-skills,
+#contact .contact .list-skills,
+#detail .skill .list-skills,
+#detail .portfolio .list-skills,
+#detail .contact .list-skills {
+  margin-top: 50px;
+}
+
+#skill .skill .list-skills p,
+#skill .portfolio .list-skills p,
+#skill .contact .list-skills p,
+#portfolio .skill .list-skills p,
+#portfolio .portfolio .list-skills p,
+#portfolio .contact .list-skills p,
+#contact .skill .list-skills p,
+#contact .portfolio .list-skills p,
+#contact .contact .list-skills p,
+#detail .skill .list-skills p,
+#detail .portfolio .list-skills p,
+#detail .contact .list-skills p {
+  color: #4A4A4A;
+}
+
+#skill .skill .list-skills .bars,
+#skill .portfolio .list-skills .bars,
+#skill .contact .list-skills .bars,
+#portfolio .skill .list-skills .bars,
+#portfolio .portfolio .list-skills .bars,
+#portfolio .contact .list-skills .bars,
+#contact .skill .list-skills .bars,
+#contact .portfolio .list-skills .bars,
+#contact .contact .list-skills .bars,
+#detail .skill .list-skills .bars,
+#detail .portfolio .list-skills .bars,
+#detail .contact .list-skills .bars {
+  width: 90%;
+  border: 1px solid #0070e2;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+#skill .skill .list-skills .skills,
+#skill .portfolio .list-skills .skills,
+#skill .contact .list-skills .skills,
+#portfolio .skill .list-skills .skills,
+#portfolio .portfolio .list-skills .skills,
+#portfolio .contact .list-skills .skills,
+#contact .skill .list-skills .skills,
+#contact .portfolio .list-skills .skills,
+#contact .contact .list-skills .skills,
+#detail .skill .list-skills .skills,
+#detail .portfolio .list-skills .skills,
+#detail .contact .list-skills .skills {
+  text-align: right;
+  /* Right-align text */
+  padding-top: 10px;
+  /* Add top padding */
+  padding-bottom: 10px;
+  /* Add bottom padding */
+  color: white;
+  /* White text color */
+}
+
+#skill .skill .list-skills .premiere,
+#skill .portfolio .list-skills .premiere,
+#skill .contact .list-skills .premiere,
+#portfolio .skill .list-skills .premiere,
+#portfolio .portfolio .list-skills .premiere,
+#portfolio .contact .list-skills .premiere,
+#contact .skill .list-skills .premiere,
+#contact .portfolio .list-skills .premiere,
+#contact .contact .list-skills .premiere,
+#detail .skill .list-skills .premiere,
+#detail .portfolio .list-skills .premiere,
+#detail .contact .list-skills .premiere {
+  width: 85%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0c2eb5), color-stop(#0051ce), color-stop(#0070e2), color-stop(#008ff2), to(#1dacff));
+  background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+}
+
+#skill .skill .list-skills .cinema,
+#skill .portfolio .list-skills .cinema,
+#skill .contact .list-skills .cinema,
+#portfolio .skill .list-skills .cinema,
+#portfolio .portfolio .list-skills .cinema,
+#portfolio .contact .list-skills .cinema,
+#contact .skill .list-skills .cinema,
+#contact .portfolio .list-skills .cinema,
+#contact .contact .list-skills .cinema,
+#detail .skill .list-skills .cinema,
+#detail .portfolio .list-skills .cinema,
+#detail .contact .list-skills .cinema {
+  width: 80%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0c2eb5), color-stop(#0051ce), color-stop(#0070e2), color-stop(#008ff2), to(#1dacff));
+  background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+}
+
+#skill .skill .list-skills .script,
+#skill .portfolio .list-skills .script,
+#skill .contact .list-skills .script,
+#portfolio .skill .list-skills .script,
+#portfolio .portfolio .list-skills .script,
+#portfolio .contact .list-skills .script,
+#contact .skill .list-skills .script,
+#contact .portfolio .list-skills .script,
+#contact .contact .list-skills .script,
+#detail .skill .list-skills .script,
+#detail .portfolio .list-skills .script,
+#detail .contact .list-skills .script {
+  width: 90%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0c2eb5), color-stop(#0051ce), color-stop(#0070e2), color-stop(#008ff2), to(#1dacff));
+  background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+}
+
+#skill .skill .list-skills .com,
+#skill .portfolio .list-skills .com,
+#skill .contact .list-skills .com,
+#portfolio .skill .list-skills .com,
+#portfolio .portfolio .list-skills .com,
+#portfolio .contact .list-skills .com,
+#contact .skill .list-skills .com,
+#contact .portfolio .list-skills .com,
+#contact .contact .list-skills .com,
+#detail .skill .list-skills .com,
+#detail .portfolio .list-skills .com,
+#detail .contact .list-skills .com {
+  width: 75%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0c2eb5), color-stop(#0051ce), color-stop(#0070e2), color-stop(#008ff2), to(#1dacff));
+  background-image: linear-gradient(to right top, #0c2eb5, #0051ce, #0070e2, #008ff2, #1dacff);
+}
+
+#skill .skill .gallery,
+#skill .portfolio .gallery,
+#skill .contact .gallery,
+#portfolio .skill .gallery,
+#portfolio .portfolio .gallery,
+#portfolio .contact .gallery,
+#contact .skill .gallery,
+#contact .portfolio .gallery,
+#contact .contact .gallery,
+#detail .skill .gallery,
+#detail .portfolio .gallery,
+#detail .contact .gallery {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 792px) {
+  #skill .skill .gallery,
+  #skill .portfolio .gallery,
+  #skill .contact .gallery,
+  #portfolio .skill .gallery,
+  #portfolio .portfolio .gallery,
+  #portfolio .contact .gallery,
+  #contact .skill .gallery,
+  #contact .portfolio .gallery,
+  #contact .contact .gallery,
+  #detail .skill .gallery,
+  #detail .portfolio .gallery,
+  #detail .contact .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery,
+  #skill .portfolio .gallery,
+  #skill .contact .gallery,
+  #portfolio .skill .gallery,
+  #portfolio .portfolio .gallery,
+  #portfolio .contact .gallery,
+  #contact .skill .gallery,
+  #contact .portfolio .gallery,
+  #contact .contact .gallery,
+  #detail .skill .gallery,
+  #detail .portfolio .gallery,
+  #detail .contact .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery .span-row-2,
+  #skill .portfolio .gallery .span-row-2,
+  #skill .contact .gallery .span-row-2,
+  #portfolio .skill .gallery .span-row-2,
+  #portfolio .portfolio .gallery .span-row-2,
+  #portfolio .contact .gallery .span-row-2,
+  #contact .skill .gallery .span-row-2,
+  #contact .portfolio .gallery .span-row-2,
+  #contact .contact .gallery .span-row-2,
+  #detail .skill .gallery .span-row-2,
+  #detail .portfolio .gallery .span-row-2,
+  #detail .contact .gallery .span-row-2 {
+    grid-row: span 2 / auto;
+  }
+}
+
+#skill .skill .gallery .portfolio-wrapper,
+#skill .portfolio .gallery .portfolio-wrapper,
+#skill .contact .gallery .portfolio-wrapper,
+#portfolio .skill .gallery .portfolio-wrapper,
+#portfolio .portfolio .gallery .portfolio-wrapper,
+#portfolio .contact .gallery .portfolio-wrapper,
+#contact .skill .gallery .portfolio-wrapper,
+#contact .portfolio .gallery .portfolio-wrapper,
+#contact .contact .gallery .portfolio-wrapper,
+#detail .skill .gallery .portfolio-wrapper,
+#detail .portfolio .gallery .portfolio-wrapper,
+#detail .contact .gallery .portfolio-wrapper {
+  width: 280px;
+  height: 300px;
+  margin: 0 auto 10px;
+}
+
+@media (min-width: 792px) {
+  #skill .skill .gallery .portfolio-wrapper,
+  #skill .portfolio .gallery .portfolio-wrapper,
+  #skill .contact .gallery .portfolio-wrapper,
+  #portfolio .skill .gallery .portfolio-wrapper,
+  #portfolio .portfolio .gallery .portfolio-wrapper,
+  #portfolio .contact .gallery .portfolio-wrapper,
+  #contact .skill .gallery .portfolio-wrapper,
+  #contact .portfolio .gallery .portfolio-wrapper,
+  #contact .contact .gallery .portfolio-wrapper,
+  #detail .skill .gallery .portfolio-wrapper,
+  #detail .portfolio .gallery .portfolio-wrapper,
+  #detail .contact .gallery .portfolio-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+#skill .skill .gallery .portfolio-wrapper .hover-content,
+#skill .portfolio .gallery .portfolio-wrapper .hover-content,
+#skill .contact .gallery .portfolio-wrapper .hover-content,
+#portfolio .skill .gallery .portfolio-wrapper .hover-content,
+#portfolio .portfolio .gallery .portfolio-wrapper .hover-content,
+#portfolio .contact .gallery .portfolio-wrapper .hover-content,
+#contact .skill .gallery .portfolio-wrapper .hover-content,
+#contact .portfolio .gallery .portfolio-wrapper .hover-content,
+#contact .contact .gallery .portfolio-wrapper .hover-content,
+#detail .skill .gallery .portfolio-wrapper .hover-content,
+#detail .portfolio .gallery .portfolio-wrapper .hover-content,
+#detail .contact .gallery .portfolio-wrapper .hover-content {
+  padding-top: 100px;
+  display: block;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#skill .skill .gallery .portfolio-wrapper .hover-content img,
+#skill .portfolio .gallery .portfolio-wrapper .hover-content img,
+#skill .contact .gallery .portfolio-wrapper .hover-content img,
+#portfolio .skill .gallery .portfolio-wrapper .hover-content img,
+#portfolio .portfolio .gallery .portfolio-wrapper .hover-content img,
+#portfolio .contact .gallery .portfolio-wrapper .hover-content img,
+#contact .skill .gallery .portfolio-wrapper .hover-content img,
+#contact .portfolio .gallery .portfolio-wrapper .hover-content img,
+#contact .contact .gallery .portfolio-wrapper .hover-content img,
+#detail .skill .gallery .portfolio-wrapper .hover-content img,
+#detail .portfolio .gallery .portfolio-wrapper .hover-content img,
+#detail .contact .gallery .portfolio-wrapper .hover-content img {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#skill .skill .gallery .portfolio-wrapper .portfolio-content,
+#skill .portfolio .gallery .portfolio-wrapper .portfolio-content,
+#skill .contact .gallery .portfolio-wrapper .portfolio-content,
+#portfolio .skill .gallery .portfolio-wrapper .portfolio-content,
+#portfolio .portfolio .gallery .portfolio-wrapper .portfolio-content,
+#portfolio .contact .gallery .portfolio-wrapper .portfolio-content,
+#contact .skill .gallery .portfolio-wrapper .portfolio-content,
+#contact .portfolio .gallery .portfolio-wrapper .portfolio-content,
+#contact .contact .gallery .portfolio-wrapper .portfolio-content,
+#detail .skill .gallery .portfolio-wrapper .portfolio-content,
+#detail .portfolio .gallery .portfolio-wrapper .portfolio-content,
+#detail .contact .gallery .portfolio-wrapper .portfolio-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#skill .skill .gallery .portfolio-wrapper #foto1,
+#skill .portfolio .gallery .portfolio-wrapper #foto1,
+#skill .contact .gallery .portfolio-wrapper #foto1,
+#portfolio .skill .gallery .portfolio-wrapper #foto1,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto1,
+#portfolio .contact .gallery .portfolio-wrapper #foto1,
+#contact .skill .gallery .portfolio-wrapper #foto1,
+#contact .portfolio .gallery .portfolio-wrapper #foto1,
+#contact .contact .gallery .portfolio-wrapper #foto1,
+#detail .skill .gallery .portfolio-wrapper #foto1,
+#detail .portfolio .gallery .portfolio-wrapper #foto1,
+#detail .contact .gallery .portfolio-wrapper #foto1 {
+  background: url(../img/paris.jpg) no-repeat;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery .portfolio-wrapper #foto1,
+  #skill .portfolio .gallery .portfolio-wrapper #foto1,
+  #skill .contact .gallery .portfolio-wrapper #foto1,
+  #portfolio .skill .gallery .portfolio-wrapper #foto1,
+  #portfolio .portfolio .gallery .portfolio-wrapper #foto1,
+  #portfolio .contact .gallery .portfolio-wrapper #foto1,
+  #contact .skill .gallery .portfolio-wrapper #foto1,
+  #contact .portfolio .gallery .portfolio-wrapper #foto1,
+  #contact .contact .gallery .portfolio-wrapper #foto1,
+  #detail .skill .gallery .portfolio-wrapper #foto1,
+  #detail .portfolio .gallery .portfolio-wrapper #foto1,
+  #detail .contact .gallery .portfolio-wrapper #foto1 {
+    height: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery .portfolio-wrapper #foto1 .hover-content,
+  #skill .portfolio .gallery .portfolio-wrapper #foto1 .hover-content,
+  #skill .contact .gallery .portfolio-wrapper #foto1 .hover-content,
+  #portfolio .skill .gallery .portfolio-wrapper #foto1 .hover-content,
+  #portfolio .portfolio .gallery .portfolio-wrapper #foto1 .hover-content,
+  #portfolio .contact .gallery .portfolio-wrapper #foto1 .hover-content,
+  #contact .skill .gallery .portfolio-wrapper #foto1 .hover-content,
+  #contact .portfolio .gallery .portfolio-wrapper #foto1 .hover-content,
+  #contact .contact .gallery .portfolio-wrapper #foto1 .hover-content,
+  #detail .skill .gallery .portfolio-wrapper #foto1 .hover-content,
+  #detail .portfolio .gallery .portfolio-wrapper #foto1 .hover-content,
+  #detail .contact .gallery .portfolio-wrapper #foto1 .hover-content {
+    padding-top: 250px !important;
+  }
+}
+
+#skill .skill .gallery .portfolio-wrapper #foto1:hover,
+#skill .skill .gallery .portfolio-wrapper #foto2:hover,
+#skill .skill .gallery .portfolio-wrapper #foto3:hover,
+#skill .skill .gallery .portfolio-wrapper #foto4:hover,
+#skill .portfolio .gallery .portfolio-wrapper #foto1:hover,
+#skill .portfolio .gallery .portfolio-wrapper #foto2:hover,
+#skill .portfolio .gallery .portfolio-wrapper #foto3:hover,
+#skill .portfolio .gallery .portfolio-wrapper #foto4:hover,
+#skill .contact .gallery .portfolio-wrapper #foto1:hover,
+#skill .contact .gallery .portfolio-wrapper #foto2:hover,
+#skill .contact .gallery .portfolio-wrapper #foto3:hover,
+#skill .contact .gallery .portfolio-wrapper #foto4:hover,
+#portfolio .skill .gallery .portfolio-wrapper #foto1:hover,
+#portfolio .skill .gallery .portfolio-wrapper #foto2:hover,
+#portfolio .skill .gallery .portfolio-wrapper #foto3:hover,
+#portfolio .skill .gallery .portfolio-wrapper #foto4:hover,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto1:hover,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto2:hover,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto3:hover,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto4:hover,
+#portfolio .contact .gallery .portfolio-wrapper #foto1:hover,
+#portfolio .contact .gallery .portfolio-wrapper #foto2:hover,
+#portfolio .contact .gallery .portfolio-wrapper #foto3:hover,
+#portfolio .contact .gallery .portfolio-wrapper #foto4:hover,
+#contact .skill .gallery .portfolio-wrapper #foto1:hover,
+#contact .skill .gallery .portfolio-wrapper #foto2:hover,
+#contact .skill .gallery .portfolio-wrapper #foto3:hover,
+#contact .skill .gallery .portfolio-wrapper #foto4:hover,
+#contact .portfolio .gallery .portfolio-wrapper #foto1:hover,
+#contact .portfolio .gallery .portfolio-wrapper #foto2:hover,
+#contact .portfolio .gallery .portfolio-wrapper #foto3:hover,
+#contact .portfolio .gallery .portfolio-wrapper #foto4:hover,
+#contact .contact .gallery .portfolio-wrapper #foto1:hover,
+#contact .contact .gallery .portfolio-wrapper #foto2:hover,
+#contact .contact .gallery .portfolio-wrapper #foto3:hover,
+#contact .contact .gallery .portfolio-wrapper #foto4:hover,
+#detail .skill .gallery .portfolio-wrapper #foto1:hover,
+#detail .skill .gallery .portfolio-wrapper #foto2:hover,
+#detail .skill .gallery .portfolio-wrapper #foto3:hover,
+#detail .skill .gallery .portfolio-wrapper #foto4:hover,
+#detail .portfolio .gallery .portfolio-wrapper #foto1:hover,
+#detail .portfolio .gallery .portfolio-wrapper #foto2:hover,
+#detail .portfolio .gallery .portfolio-wrapper #foto3:hover,
+#detail .portfolio .gallery .portfolio-wrapper #foto4:hover,
+#detail .contact .gallery .portfolio-wrapper #foto1:hover,
+#detail .contact .gallery .portfolio-wrapper #foto2:hover,
+#detail .contact .gallery .portfolio-wrapper #foto3:hover,
+#detail .contact .gallery .portfolio-wrapper #foto4:hover {
+  opacity: 0.9;
+}
+
+#skill .skill .gallery .portfolio-wrapper #foto2,
+#skill .portfolio .gallery .portfolio-wrapper #foto2,
+#skill .contact .gallery .portfolio-wrapper #foto2,
+#portfolio .skill .gallery .portfolio-wrapper #foto2,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto2,
+#portfolio .contact .gallery .portfolio-wrapper #foto2,
+#contact .skill .gallery .portfolio-wrapper #foto2,
+#contact .portfolio .gallery .portfolio-wrapper #foto2,
+#contact .contact .gallery .portfolio-wrapper #foto2,
+#detail .skill .gallery .portfolio-wrapper #foto2,
+#detail .portfolio .gallery .portfolio-wrapper #foto2,
+#detail .contact .gallery .portfolio-wrapper #foto2 {
+  background: url(../img/cow.jpg) no-repeat;
+  background-size: cover;
+}
+
+#skill .skill .gallery .portfolio-wrapper #foto3,
+#skill .portfolio .gallery .portfolio-wrapper #foto3,
+#skill .contact .gallery .portfolio-wrapper #foto3,
+#portfolio .skill .gallery .portfolio-wrapper #foto3,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto3,
+#portfolio .contact .gallery .portfolio-wrapper #foto3,
+#contact .skill .gallery .portfolio-wrapper #foto3,
+#contact .portfolio .gallery .portfolio-wrapper #foto3,
+#contact .contact .gallery .portfolio-wrapper #foto3,
+#detail .skill .gallery .portfolio-wrapper #foto3,
+#detail .portfolio .gallery .portfolio-wrapper #foto3,
+#detail .contact .gallery .portfolio-wrapper #foto3 {
+  background: url(../img/book.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery .portfolio-wrapper #foto3,
+  #skill .portfolio .gallery .portfolio-wrapper #foto3,
+  #skill .contact .gallery .portfolio-wrapper #foto3,
+  #portfolio .skill .gallery .portfolio-wrapper #foto3,
+  #portfolio .portfolio .gallery .portfolio-wrapper #foto3,
+  #portfolio .contact .gallery .portfolio-wrapper #foto3,
+  #contact .skill .gallery .portfolio-wrapper #foto3,
+  #contact .portfolio .gallery .portfolio-wrapper #foto3,
+  #contact .contact .gallery .portfolio-wrapper #foto3,
+  #detail .skill .gallery .portfolio-wrapper #foto3,
+  #detail .portfolio .gallery .portfolio-wrapper #foto3,
+  #detail .contact .gallery .portfolio-wrapper #foto3 {
+    height: 600px;
+    background: url(../img/backpacker-window.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery .portfolio-wrapper #foto3 .hover-content,
+  #skill .portfolio .gallery .portfolio-wrapper #foto3 .hover-content,
+  #skill .contact .gallery .portfolio-wrapper #foto3 .hover-content,
+  #portfolio .skill .gallery .portfolio-wrapper #foto3 .hover-content,
+  #portfolio .portfolio .gallery .portfolio-wrapper #foto3 .hover-content,
+  #portfolio .contact .gallery .portfolio-wrapper #foto3 .hover-content,
+  #contact .skill .gallery .portfolio-wrapper #foto3 .hover-content,
+  #contact .portfolio .gallery .portfolio-wrapper #foto3 .hover-content,
+  #contact .contact .gallery .portfolio-wrapper #foto3 .hover-content,
+  #detail .skill .gallery .portfolio-wrapper #foto3 .hover-content,
+  #detail .portfolio .gallery .portfolio-wrapper #foto3 .hover-content,
+  #detail .contact .gallery .portfolio-wrapper #foto3 .hover-content {
+    padding-top: 250px !important;
+  }
+}
+
+#skill .skill .gallery .portfolio-wrapper #foto4,
+#skill .portfolio .gallery .portfolio-wrapper #foto4,
+#skill .contact .gallery .portfolio-wrapper #foto4,
+#portfolio .skill .gallery .portfolio-wrapper #foto4,
+#portfolio .portfolio .gallery .portfolio-wrapper #foto4,
+#portfolio .contact .gallery .portfolio-wrapper #foto4,
+#contact .skill .gallery .portfolio-wrapper #foto4,
+#contact .portfolio .gallery .portfolio-wrapper #foto4,
+#contact .contact .gallery .portfolio-wrapper #foto4,
+#detail .skill .gallery .portfolio-wrapper #foto4,
+#detail .portfolio .gallery .portfolio-wrapper #foto4,
+#detail .contact .gallery .portfolio-wrapper #foto4 {
+  background: url(../img/backpacker.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  #skill .skill .gallery .portfolio-wrapper #foto4,
+  #skill .portfolio .gallery .portfolio-wrapper #foto4,
+  #skill .contact .gallery .portfolio-wrapper #foto4,
+  #portfolio .skill .gallery .portfolio-wrapper #foto4,
+  #portfolio .portfolio .gallery .portfolio-wrapper #foto4,
+  #portfolio .contact .gallery .portfolio-wrapper #foto4,
+  #contact .skill .gallery .portfolio-wrapper #foto4,
+  #contact .portfolio .gallery .portfolio-wrapper #foto4,
+  #contact .contact .gallery .portfolio-wrapper #foto4,
+  #detail .skill .gallery .portfolio-wrapper #foto4,
+  #detail .portfolio .gallery .portfolio-wrapper #foto4,
+  #detail .contact .gallery .portfolio-wrapper #foto4 {
+    background: url(../img/book.jpg) no-repeat;
+  }
+}
+
+#skill .skill .gallery .portfolio-wrapper .btn,
+#skill .portfolio .gallery .portfolio-wrapper .btn,
+#skill .contact .gallery .portfolio-wrapper .btn,
+#portfolio .skill .gallery .portfolio-wrapper .btn,
+#portfolio .portfolio .gallery .portfolio-wrapper .btn,
+#portfolio .contact .gallery .portfolio-wrapper .btn,
+#contact .skill .gallery .portfolio-wrapper .btn,
+#contact .portfolio .gallery .portfolio-wrapper .btn,
+#contact .contact .gallery .portfolio-wrapper .btn,
+#detail .skill .gallery .portfolio-wrapper .btn,
+#detail .portfolio .gallery .portfolio-wrapper .btn,
+#detail .contact .gallery .portfolio-wrapper .btn {
+  margin-top: 10px;
+  background: #1A97F3;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+#skill .skill .gallery .portfolio-wrapper .play,
+#skill .portfolio .gallery .portfolio-wrapper .play,
+#skill .contact .gallery .portfolio-wrapper .play,
+#portfolio .skill .gallery .portfolio-wrapper .play,
+#portfolio .portfolio .gallery .portfolio-wrapper .play,
+#portfolio .contact .gallery .portfolio-wrapper .play,
+#contact .skill .gallery .portfolio-wrapper .play,
+#contact .portfolio .gallery .portfolio-wrapper .play,
+#contact .contact .gallery .portfolio-wrapper .play,
+#detail .skill .gallery .portfolio-wrapper .play,
+#detail .portfolio .gallery .portfolio-wrapper .play,
+#detail .contact .gallery .portfolio-wrapper .play {
+  cursor: pointer;
+}
+
+#skill .skill .gallery .portfolio-wrapper .btn:hover,
+#skill .portfolio .gallery .portfolio-wrapper .btn:hover,
+#skill .contact .gallery .portfolio-wrapper .btn:hover,
+#portfolio .skill .gallery .portfolio-wrapper .btn:hover,
+#portfolio .portfolio .gallery .portfolio-wrapper .btn:hover,
+#portfolio .contact .gallery .portfolio-wrapper .btn:hover,
+#contact .skill .gallery .portfolio-wrapper .btn:hover,
+#contact .portfolio .gallery .portfolio-wrapper .btn:hover,
+#contact .contact .gallery .portfolio-wrapper .btn:hover,
+#detail .skill .gallery .portfolio-wrapper .btn:hover,
+#detail .portfolio .gallery .portfolio-wrapper .btn:hover,
+#detail .contact .gallery .portfolio-wrapper .btn:hover {
+  background: white;
+  color: #1A97F3;
+}
+
+#contact .contact form .btn {
+  background: #0070e2;
+  color: white;
+  border-radius: 20px;
+  width: 80px;
+}
+
+#contact .contact form .btn:hover {
+  color: #0070e2;
+  background: white;
+  border: 1px solid #0070e2;
+}
+
+#detail {
+  height: 100%;
+}
+
+#detail .container {
+  background: white !important;
+}
+
+#detail .container .detail h1 {
+  color: #0070e2;
+  font-size: 33px;
+}
+
+#detail .container .detail .portfolio-detail {
+  color: #0070e2;
+}
+
+@media (min-width: 792px) {
+  #detail .container .detail .portfolio-detail .grid-detail {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#detail .container .detail .portfolio-detail .portfolio-text {
+  color: #4A4A4A;
+}
+
+@media (min-width: 792px) {
+  #detail .container .detail .portfolio-detail .portfolio-text {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+#detail .container .detail .portfolio-detail .portfolio-text .title {
+  font-size: 25px;
+}
+
+@media (min-width: 792px) {
+  #detail .container .detail .portfolio-detail .portfolio-text .title {
+    margin-top: 50px;
+  }
+}
+
+#detail .container .detail .detail-wrapper {
+  width: 280px;
+  height: 300px;
+  overflow: hidden;
+}
+
+@media (min-width: 792px) {
+  #detail .container .detail .detail-wrapper {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 100%;
+    height: 25em;
+  }
+}
+
+#detail .container .detail .detail-wrapper .portfolio-content {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#detail .container .detail .detail-wrapper .portfolio-content .hover-content {
+  padding-top: 100px;
+  display: block;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#detail .container .detail .detail-wrapper .portfolio-content .hover-content img {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media (min-width: 792px) {
+  #detail .container .detail .detail-wrapper .portfolio-content .hover-content {
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  #detail .container .detail .detail-wrapper .portfolio-content .hover-content {
+    paddding-top: 200px;
+  }
+}
+
+#detail .container .detail #port-image {
+  background: url(../img/paris.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 792px) {
+  #detail .container .detail #port-image {
+    background-position: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #detail .container .detail #port-image {
+    background-position: center -350px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
