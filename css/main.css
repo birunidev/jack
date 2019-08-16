@@ -81,7 +81,7 @@ body {
 @media (min-width: 992px) {
   .header-image {
     width: 50%;
-    height: 40em;
+    height: 50em;
     background-size: cover;
     background-position: center -40px;
   }
